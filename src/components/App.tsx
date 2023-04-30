@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Header from "./Header";
 
 const App: React.FC = () => {
   const [darkMode, setDarkMode] = useState<boolean>(false);
@@ -18,7 +17,7 @@ const App: React.FC = () => {
   }, [darkMode]);
 
   return (
-    <div className="min-h-screen">
+    <div >
       <main className="p-4">
         {/* Add your generator form, GUID list, and other components here */}
       </main>

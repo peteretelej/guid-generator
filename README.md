@@ -3,16 +3,20 @@
 A powerful user-friendly GUID generator and validator.
 
 ## Features
-- Multiple GUID formats: UUID v1, v3, v4, and v5
-- Bulk generation of GUIDs
-- Copy to clipboard functionality
-- Export GUIDs in plain text, JSON, CSV, and XML formats
-- Customization options (prefix, suffix, custom separators)
-- Namespace and name input for UUID v3 and v5
-- QR code generation for GUIDs
-- History of generated GUIDs with search and filtering options
-- Dark mode theme
-- Responsive design for mobile and tablet devices
+- [ ] Multiple GUID formats: UUID v1, v3, v4, and v5
+- [ ] Guides for generating GUIDs in different programming languages
+    - [ ] PHP
+    - [ ] C#
+    - [ ] Go
+- [ ] Bulk generation of GUIDs
+- [ ] Copy to clipboard functionality
+- [ ] Export GUIDs in plain text, JSON, CSV, and XML formats
+- [ ] Customization options (prefix, suffix, custom separators)
+- [ ] Namespace and name input for UUID v3 and v5
+- [ ] QR code generation for GUIDs
+- [ ] History of generated GUIDs with search and filtering options
+- [x] Dark mode theme
+- [ ] Responsive design for mobile and tablet devices
 
 ## Usage
 Visit the web app at [](#).
