@@ -1,8 +1,8 @@
-title: How to Generate GUIDs with Go
+title: How to Generate GUIDs in C#
 tags:
-    - golang
+    - csharp
     - guid
-lang: golang
+lang: csharp
 ---
 
 # How to Generate GUIDs in C#
@@ -64,3 +64,7 @@ C# does not natively support generating other UUID versions like UUID v1 (time-b
 For more advanced use cases or custom formats, consider using external libraries available through NuGet, such as Uuid.NET or Fugro.UUIDGenerator.
 
 This guide covered the basics of generating and formatting GUIDs in C# using the built-in `System.Guid` class. While C# natively supports UUID v4, you can explore external libraries for additional UUID versions and functionality.
+
+## References
+- [System.Guid Struct](https://docs.microsoft.com/en-us/dotnet/api/system.guid?view=net-5.0)
+- [Guid.ToString Method](https://docs.microsoft.com/en-us/dotnet/api/system.guid.tostring?view=net-5.0#System_Guid_ToString_System_String_)

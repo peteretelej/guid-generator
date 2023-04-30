@@ -13,7 +13,9 @@ The `github.com/google/uuid` package is an easy to use and performant package fo
 - Go 1.16+
 
 1. Install the `github.com/google/uuid` package
-
+```bash
+go get -u github.com/google/uuid
+```
 2. Use the relevant package functions for the desired GUID format
 
 
@@ -165,3 +167,12 @@ func main() {
 	fmt.Println("Formatted UUID:", plainUUID)
 }
 ```
+
+## Tips for working with GUIDs in Go
+- Use well-tested libraries like github.com/google/uuid for generating GUIDs to ensure proper implementation and uniqueness.
+- Prefer using UUID v4 (random-based) for most use cases, as it provides a good balance between uniqueness and simplicity.
+- Be cautious when using UUIDs for security-sensitive purposes, as the random-based UUID v4 might not be suitable for cryptographic security.
+- For performance-critical scenarios, consider using a more efficient GUID generation approach, such as time-based UUIDs (v1), to reduce the risk of fragmentation in databases.
+
+## References
+- [github.com/google/uuid GoDoc](https://pkg.go.dev/github.com/google/uuid)
