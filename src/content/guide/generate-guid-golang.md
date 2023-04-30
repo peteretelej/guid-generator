@@ -1,7 +1,9 @@
+---
 title: How to Generate GUIDs with Go
 tags:
     - golang
     - guid
+    - github.com/google/uuid
 lang: golang
 ---
 
@@ -176,3 +178,4 @@ func main() {
 
 ## References
 - [github.com/google/uuid GoDoc](https://pkg.go.dev/github.com/google/uuid)
+- [uuid rfc](https://tools.ietf.org/html/rfc4122)

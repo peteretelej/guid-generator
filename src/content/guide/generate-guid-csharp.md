@@ -1,7 +1,9 @@
+---
 title: How to Generate GUIDs in C#
 tags:
     - csharp
     - guid
+    - System.Guid
 lang: csharp
 ---
 
@@ -68,3 +70,4 @@ This guide covered the basics of generating and formatting GUIDs in C# using the
 ## References
 - [System.Guid Struct](https://docs.microsoft.com/en-us/dotnet/api/system.guid?view=net-5.0)
 - [Guid.ToString Method](https://docs.microsoft.com/en-us/dotnet/api/system.guid.tostring?view=net-5.0#System_Guid_ToString_System_String_)
+- [uuid rfc](https://tools.ietf.org/html/rfc4122)

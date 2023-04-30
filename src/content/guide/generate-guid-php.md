@@ -1,7 +1,9 @@
+---
 title: How to Generate GUIDs in PHP
 tags:
     - php
     - guid
+    - ramsey/uuid
 lang: php
 ---
 
@@ -89,7 +91,11 @@ echo "UUID with braces: " . $uuidWithBraces . PHP_EOL;
 - Use ramsey/uuid over custom implementations: The `ramsey/uuid` library is a well-tested and widely used solution for generating UUIDs in PHP, making it more reliable and performant than custom implementations.
 - Prefer UUID v4 (random-based) for most use cases: UUID v4 provides a good balance of uniqueness and randomness without relying on a specific system's clock or hardware.
 - Be aware of the string representation: When storing or transmitting UUIDs as strings, be mindful of the format being used to avoid potential compatibility issues.
+- Use a namespace and a name that are unique and consistent to generate UUID version 5.
+- Use the same UUID generation method consistently throughout your application.
+- Store GUIDs as strings, not binary data.
 
 ## References
 - [ramsey/uuid](https://github.com/ramsey/uuid)
 - [Composer](https://getcomposer.org/)
+- [uuid rfc](https://tools.ietf.org/html/rfc4122)

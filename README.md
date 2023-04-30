@@ -4,10 +4,10 @@ A powerful user-friendly GUID generator and validator.
 
 ## Features
 - [x] Multiple GUID formats: UUID v1, v3, v4, and v5
-- [ ] Guides for generating GUIDs in different programming languages
-    - [ ] PHP
-    - [ ] C#
-    - [ ] Go
+- [x] Guides for generating GUIDs in different programming languages
+    - [x] PHP
+    - [x] C#
+    - [x] Go
 - [x] Bulk generation of GUIDs
 - [x] Copy to clipboard functionality
 - [x] Export GUIDs in plain text, JSON, CSV, and XML formats

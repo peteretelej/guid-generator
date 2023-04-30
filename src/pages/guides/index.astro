@@ -1,0 +1,53 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import NavBar from "../../components/NavBar.astro";
+const guideEntries = await getCollection("guide");
+---
+
+<Layout title="How to Generate GUIDs in different languages">
+  <NavBar />
+  <div class="bg-white dark:bg-gray-800">
+    <div class="mx-auto max-w-2xl">
+      <h2
+        class="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-200 sm:text-4xl"
+      >
+        How to Generate GUIDs
+      </h2>
+      <p class="mt-2 text-lg leading-8 text-gray-600 dark:text-gray-400">
+        GUID Generation using different programming languages
+      </p>
+      <div class="border-gray-200 pt-4">
+        <div
+          class="overflow-hidden rounded-md bg-white dark:bg-gray-800 shadow"
+        >
+          <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
+            {
+              guideEntries.map((entry) => (
+                <li class="px-6 py-4">
+                  <article class="flex max-w-xl flex-col items-start justify-between">
+                    <div class="group relative">
+                      <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-600 dark:text-gray-400  group-hover:text-gray-600">
+                        <a href={`/guid-generator/guides/${entry.slug}`}>
+                          <span class="absolute inset-0" />
+                          {entry.data.title}
+                        </a>
+                      </h3>
+                    </div>
+                    <div class="flex items-center text-xs mt-3 mb-2 gap-2">
+                      {entry.data.tags.map((tag) => (
+                        <span class="relative z-10 rounded-full text-gray-600 bg-gray-100 dark:text-gray-200 dark:bg-gray-600 px-3 py-1.5 font-medium  ">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </article>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

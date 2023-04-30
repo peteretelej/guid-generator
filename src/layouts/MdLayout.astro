@@ -1,0 +1,13 @@
+---
+import NavBar from "../components/NavBar.astro";
+import Layout from "./Layout.astro"
+
+const { title } = Astro.props
+---
+
+<Layout title={title} >
+    <NavBar />
+    <article class="prose dark:prose-invert px-3  max-w-none">
+        <slot />
+    </article>    
+</Layout>
