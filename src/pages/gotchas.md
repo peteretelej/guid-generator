@@ -5,7 +5,7 @@ layout: ../layouts/MdLayout.astro
 
 # Gotchas and Common Pitfalls When Working with GUIDs
 
-When working with GUIDs, there are several things to watch out for, along with common pitfalls when copying GUIDs from online sources. Here is a succinct summary of these concerns and best practices for working with GUIDs across different programming languages:
+When working with GUIDs, there are several things to watch out for:
 
 1. **Collision risk**: Although the probability is extremely low, there is a small chance that two generated GUIDs might collide. Be aware of this risk, especially when generating GUIDs at a massive scale.
 
