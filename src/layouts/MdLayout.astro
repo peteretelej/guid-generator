@@ -1,13 +1,13 @@
 ---
 import NavBar from "../components/NavBar.astro";
-import Layout from "./Layout.astro"
+import Layout from "./Layout.astro";
 
-const { title } = Astro.props
+const { title, frontmatter } = Astro.props;
 ---
 
-<Layout title={title} >
-    <NavBar />
-    <article class="prose dark:prose-invert px-3  max-w-none">
-        <slot />
-    </article>    
+<Layout title={frontmatter ? frontmatter.title : title}>
+  <NavBar />
+  <article class="prose dark:prose-invert px-3 max-w-none">
+    <slot />
+  </article>
 </Layout>

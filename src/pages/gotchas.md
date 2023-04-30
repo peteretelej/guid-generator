@@ -1,6 +1,6 @@
 ---
+title: Gotchas and Common Pitfalls When Working with GUIDs
 layout: ../layouts/MdLayout.astro
-title: My Blog Post
 ---
 
 # Gotchas and Common Pitfalls When Working with GUIDs
