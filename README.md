@@ -17,6 +17,7 @@ A powerful user-friendly GUID generator and validator.
 - [ ] History of generated GUIDs with search and filtering options
 - [x] Dark mode theme
 - [ ] Responsive design for mobile and tablet devices
+- [ ] Validate GUIDs
 
 ## Usage
 Visit the web app at [](#).

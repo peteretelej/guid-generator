@@ -38,6 +38,5 @@ When working with GUIDs, there are several things to watch out for, along with c
 **Further reading:**
 
 1. [RFC 4122: A Universally Unique IDentifier (UUID) URN Namespace](https://tools.ietf.org/html/rfc4122)
-3. [Microsoft GUID documentation](https://docs.microsoft.com/en-us/windows/win32/com/com-clsid-key)
 
 By considering these points and following best practices, you can work with GUIDs effectively while minimizing potential issues.
