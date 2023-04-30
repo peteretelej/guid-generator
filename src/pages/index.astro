@@ -1,12 +1,13 @@
 ---
-import App from '../components/App';
+import GuidGenerator from '../components/GuidGenerator';
+import GuidGeneratorForm from '../components/GuidGeneratorForm';
 import NavBar from '../components/NavBar.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Guid Generator">
 	<NavBar />
-	<App client:load/>
+	<GuidGenerator client:load />
 </Layout>
 
 
