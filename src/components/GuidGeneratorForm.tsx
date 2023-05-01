@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { v1 as uuidv1, v3 as uuidv3, v4 as uuidv4, v5 as uuidv5 } from 'uuid';
-
+import { v1 as uuidv1, v3 as uuidv3, v4 as uuidv4, v5 as uuidv5 } from "uuid";
 
 interface GuidGeneratorFormProps {
   onGenerate: (guids: string[]) => void;
@@ -18,7 +17,7 @@ const GuidGeneratorForm: React.FC<GuidGeneratorFormProps> = ({
   const formatGuid = (guid: string): string => {
     if (uppercase) guid = guid.toUpperCase();
     if (braces) guid = `{${guid}}`;
-    if (!hyphens) guid = guid.replace(/-/g, '');
+    if (!hyphens) guid = guid.replace(/-/g, "");
     return guid;
   };
 
@@ -29,19 +28,19 @@ const GuidGeneratorForm: React.FC<GuidGeneratorFormProps> = ({
       let guid: string;
 
       switch (version) {
-        case 'v1':
+        case "v1":
           guid = uuidv1();
           break;
-        case 'v3':
+        case "v3":
           // TODO: allow custom namespace and name
-          guid = uuidv3('example.com', uuidv3.DNS);
+          guid = uuidv3("example.com", uuidv3.DNS);
           break;
-        case 'v4':
+        case "v4":
           guid = uuidv4();
           break;
-        case 'v5':
+        case "v5":
           // TODO: allow custom namespace and name
-          guid = uuidv5('example.com', uuidv5.DNS);
+          guid = uuidv5("example.com", uuidv5.DNS);
           break;
         default:
           guid = uuidv4();
@@ -52,7 +51,6 @@ const GuidGeneratorForm: React.FC<GuidGeneratorFormProps> = ({
 
     onGenerate(guids);
   };
-
 
   return (
     <form className="space-y-4">
@@ -129,6 +127,7 @@ const GuidGeneratorForm: React.FC<GuidGeneratorFormProps> = ({
       </div>
       <div className="flex space-x-4">
         <button
+          id="generate-button"
           type="button"
           className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded"
           onClick={generateGuids}

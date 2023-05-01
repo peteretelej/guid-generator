@@ -22,33 +22,34 @@ const GuidResults: React.FC<GuidListProps> = ({ guids, onCopy, onExport }) => {
       <textarea
         ref={textareaRef}
         readOnly
+        id="guid-text"
         className="w-full h-64 bg-gray-200 text-gray-800 p-2 rounded"
         value={guids.join('\n')}
       />
       <div className="flex space-x-4">
         <button
-          type="button"
+          type="button" id="copy-button"
           className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded"
           onClick={handleCopy}
         >
           Copy to Clipboard
         </button>
         <button
-          type="button"
+          type="button" id="export-json-button"
           className="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded"
           onClick={() => onExport('json')}
         >
           Export JSON
         </button>
         <button
-          type="button"
+          type="button" id="export-csv-button"
           className="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded"
           onClick={() => onExport('csv')}
         >
           Export CSV
         </button>
         <button
-          type="button"
+          type="button" id="export-xml-button"
           className="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded"
           onClick={() => onExport('xml')}
         >
