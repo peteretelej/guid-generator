@@ -72,10 +72,10 @@ export default defineConfig({
   ],
 
   /* Run your local dev server before starting the tests */
-  webServer: process.env.CI ? {
-    command: 'pnpm run preview',
-    url: 'http://localhost:3000/guid-generator',
+  webServer:  {
+    command: 'pnpm run dev',
+    url: 'http://localhost:3000/guid-generator/',
     timeout: 120 * 1000,
-    reuseExistingServer: false,
-  } : undefined,
+    reuseExistingServer: !process.env.CI,
+  },
 });
